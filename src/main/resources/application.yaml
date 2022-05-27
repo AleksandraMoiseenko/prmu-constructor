@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: ${PG_URL:jdbc:postgresql://localhost:5432/prmu}
+    username: ${PG_USER:postgres}
+    password: ${PG_PASSWORD:root}
+  flyway:
+    enabled: true
+  jpa:
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+      hibernate.enable_lazy_load_no_trans: true
+
+moodle:
+  login: admin
+  password: Vjcnjjnhzl-114
+  url: http://127.0.0.1/
+  path:
+    backup: C:\Users\vipsm\Downloads\backup
+    tmp: C:\Users\vipsm\Downloads\tmp\
+
+selenium:
+  driver:
+    path: C:\software\selenium\geckodriver.exe
